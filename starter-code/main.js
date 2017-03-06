@@ -4,7 +4,7 @@ var cardTwo = "queen";
 var cardThree = "king";
 var cardFour = "king";
 
-if (cardThree !== cardFour) {
+/* if (cardThree !== cardFour) {
   alert('Sorry, try again.');
 }
 else {
@@ -18,4 +18,15 @@ else {
   else {
     alert('error');
   }
+} */
+document.getElementById('game-board');
+
+var createCards = function(){
+  for (x=0; x<4; x+=1){
+    var cards=document.createElement('div');
+    cards.className = 'card';
+    game-board.appendChild(cards);
+  }
 }
+
+createCards();
